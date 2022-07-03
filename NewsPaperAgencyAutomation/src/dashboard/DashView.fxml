@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.DashViewController">
+   <children>
+      <Circle fill="#1f93ff" layoutX="347.0" layoutY="149.0" onMouseClicked="#hawker" opacity="0.23" radius="83.0" stroke="BLACK" strokeType="INSIDE">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Circle>
+      <Circle fx:id="papercir" fill="DODGERBLUE" layoutX="114.0" layoutY="152.0" onMouseClicked="#paper" opacity="0.25" radius="82.0" stroke="BLACK" strokeType="INSIDE">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Circle>
+      <Circle fill="DODGERBLUE" layoutX="561.0" layoutY="150.0" onMouseClicked="#customer" opacity="0.25" radius="83.0" stroke="BLACK" strokeType="INSIDE">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Circle>
+      <Label layoutX="92.0" layoutY="202.0" prefHeight="18.0" prefWidth="44.0" text="Paper">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="291.0" layoutY="193.0" prefHeight="18.0" prefWidth="118.0" text="Hawker Manager">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="517.0" layoutY="187.0" prefHeight="17.0" prefWidth="106.0" text="Customer Panel">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Circle fill="DODGERBLUE" layoutX="115.0" layoutY="430.0" onMouseClicked="#billgeneration" opacity="0.25" radius="82.0" stroke="BLACK" strokeType="INSIDE">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Circle>
+      <Circle fill="DODGERBLUE" layoutX="364.0" layoutY="431.0" onMouseClicked="#paybill" opacity="0.25" radius="83.0" stroke="BLACK" strokeType="INSIDE">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Circle>
+      <Label layoutX="60.0" layoutY="468.0" prefHeight="20.0" prefWidth="111.0" text="Bill Generation">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="475.0" prefHeight="10.0" prefWidth="59.0" text="Pay Bill">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="169.0" fitWidth="169.0" layoutX="29.0" layoutY="68.0" onMouseClicked="#paper" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="169.0" fitWidth="169.0" layoutX="263.0" layoutY="63.0" onMouseClicked="#hawker" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="169.0" fitWidth="169.0" layoutX="476.0" layoutY="64.0" onMouseClicked="#customer" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="169.0" fitWidth="169.0" layoutX="277.0" layoutY="344.0" onMouseClicked="#paybill" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="170.0" fitWidth="169.0" layoutX="30.0" layoutY="345.0" onMouseClicked="#billgeneration" pickOnBounds="true" preserveRatio="true" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

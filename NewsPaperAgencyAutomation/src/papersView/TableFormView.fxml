@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="papersView.TableFormViewController">
+   <children>
+      <Label layoutX="224.0" layoutY="28.0" prefHeight="32.0" prefWidth="163.0" text="Papers Viewer" textFill="RED">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="255.0" layoutY="64.0" mnemonicParsing="false" onAction="#doFetchAll" text="Show All Papers" />
+      <TableView fx:id="tblUsers" layoutX="13.0" layoutY="110.0" prefHeight="348.0" prefWidth="570.0" />
+   </children>
+</AnchorPane>
